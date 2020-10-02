@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [3,2,5,4,8,9,10,12,2,5];
+    let num=+prompt('nhap so can xoa');
+
+    function tryRemoveFromArray(num,arr){
+        for (let i = arr.length - 1; i >= 0 ; i--) {
+            if ( arr[i] === num){
+                arr.splice(i,1);
+            }
+        }
+        return arr;
+    }
+    document.write(tryRemoveFromArray(num,arr));
+
+</script>
+</body>
+</html>
